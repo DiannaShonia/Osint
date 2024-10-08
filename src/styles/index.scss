@@ -1,0 +1,22 @@
+body {
+  background-color: #ece6e4;
+  height: 100vh;
+}
+
+input {
+  outline: none; 
+  border: 0; /* Add a custom border */
+
+}
+
+input:focus, input:hover {
+  outline: none; /* Remove the default browser outline */
+  box-shadow: none; /* Reset any default focus shadows */
+  /* You can add your custom focus styles here, e.g.: */
+  border: 0; /* Add a custom border */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
