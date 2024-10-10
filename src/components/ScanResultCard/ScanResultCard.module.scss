@@ -1,0 +1,162 @@
+@import '../../styles/variables';
+
+.mainContainer {
+    background: #fff;
+    border-radius: 13px;
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    height: min-content;
+    width: 500px ;
+
+    .cardHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        padding: 30px 24px;
+        border-bottom: 3px solid #f7f2f0;
+        box-sizing: border-box;
+
+        p {
+            color: rgb(112, 110, 110);
+            font-size: 14px;
+        }
+
+        h2 {
+            font-weight: 500;
+        }
+    }
+
+    .cardBody {
+        height: 100%;
+        padding: 24px;
+
+
+        .cardContent {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 20px;
+
+            .cardRow {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+
+            .cardRowWrapper {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            h3 {
+                font-size: 16px;
+                font-weight: 500;
+                color: $primary-color;
+                margin-bottom: 8px;
+            }
+
+            p {
+                margin-bottom: 8px;
+                font-size: 13px;
+
+                span {
+                    color: rgb(112, 110, 110);
+                    margin-right: 4px;
+
+                }
+            }
+        }
+
+        .seeMoreContainer {
+            button {
+                padding: 10px 16px;
+                background-color: $primary-color;
+                border: 0;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .modalWrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #00000056;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .modal {
+            width: 60%;
+            background: #fff;
+            border-radius: 15px;
+            padding: 24px;
+            height: min-content;
+
+            .modalHeader {
+                display: flex;
+                justify-content: space-between;
+
+                h3 {
+                    color: $primary-color;
+                }
+
+                p {
+                    color: rgb(112, 110, 110);
+                    font-size: 14px;
+
+                }
+
+                .close {
+                    background: transparent;
+                    border: 0;
+                    cursor: pointer;
+                }
+            }
+
+            .modalContent {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+
+                p {
+                    width: 48%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+  .mainContainer {
+    width: 290px !important;
+
+    .cardRow {
+        flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+    .mainContainer {
+        width: 450px ;
+      }
+  }
+
+  @media (max-width: 1200px) {
+    .mainContainer {
+        height: unset;
+        
+      }
+  }

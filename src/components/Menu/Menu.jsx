@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import styles from "./Menu.module.scss";
 
 const Menu = () => {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <>

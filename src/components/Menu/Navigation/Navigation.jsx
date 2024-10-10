@@ -4,28 +4,15 @@ import { menuSlide } from "../CurvedAnimation";
 import PageLink from "./Link/Link";
 import Curve from "./Curve/Curve";
 
-
-
 const Navigation = () => {
-  //   const pathname = usePathname();
-  //   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
-
   const navItems = [
     {
       title: "Home",
       href: "/",
     },
     {
-      title: "Work",
-      href: "/work",
-    },
-    {
-      title: "About",
-      href: "/about",
-    },
-    {
-      title: "Contact",
-      href: "/contact",
+      title: "Scans",
+      href: "/scans",
     },
   ];
 
@@ -39,9 +26,6 @@ const Navigation = () => {
     >
       <div className={styles.body}>
         <div
-          onMouseLeave={() => {
-            // setSelectedIndicator(pathname);
-          }}
           className={styles.nav}
         >
           <div className={styles.header}>
@@ -52,13 +36,10 @@ const Navigation = () => {
               <PageLink
                 key={index}
                 data={{ ...data, index }}
-                // isActive={selectedIndicator == data.href}
-                // setSelectedIndicator={setSelectedIndicator}
               ></PageLink>
             );
           })}
         </div>
-        {/* <Footer /> */}
       </div>
       <Curve />
     </motion.div>

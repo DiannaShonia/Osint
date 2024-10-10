@@ -1,15 +1,16 @@
 .menu {
-    height: 100vh;
     background-color: rgb(41, 41, 41);
     position: fixed;
     right: 0;
     top: 0;
+    bottom: 0;
     color: white;
+    z-index: 9;
 
     .body {
         box-sizing: border-box;
         height: 100%;
-        padding: 100px;
+        padding: 80px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -20,6 +21,7 @@
             font-size: 56px;
             gap: 12px;
             margin-top: 80px;
+            width: 200px;
 
             .header {
                 color: rgb(153, 153, 153);
@@ -36,6 +38,19 @@
                 font-weight: 300;
             }
 
+        }
+    }
+}
+
+// Responsive 
+
+@media (max-width: 575.98px) {
+    .body {
+        padding: 40px !important;
+
+        .nav {
+            width: 50px;
+            margin-top: 120px !important;
         }
     }
 }

@@ -5,4 +5,13 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+
+    h1 {
+        font-family: sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .scanResultCardWrapper {
+        margin-top: 40px;
+    }
 }

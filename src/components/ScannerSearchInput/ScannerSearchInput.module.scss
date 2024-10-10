@@ -4,11 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 300px;
     width: 100%;
 
     .inputContainer {
-        width: 35%;
+        width: 55%;
         display: flex;
         justify-content: space-between;
         background: #fff;
@@ -27,10 +26,6 @@
 
         }
 
-        //  box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.2);
-
-
-
         .scanButton {
             height: 50px;
             width: 140px;
@@ -44,7 +39,6 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-
 
             .search {
                 margin-right: 6px;
@@ -68,3 +62,33 @@
       transform: rotate(360deg);
     }
   }
+
+  // Responsive 
+
+  @media (max-width: 575.98px) {
+    /* Styles for extra small devices */
+
+    .inputContainer  {
+        width: 90% !important;
+        input {
+            font-size: 16px;
+        }
+
+        .scanButton {
+            font-size: 16px !important;
+        }
+    }
+  }
+  
+  @media  (max-width: 991.98px) {
+    .inputContainer {
+        width: 90% !important;
+       }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1200px) {
+   .inputContainer {
+    width: 70% !important;
+   }
+}
+  

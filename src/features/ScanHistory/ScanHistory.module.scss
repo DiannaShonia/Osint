@@ -1,0 +1,20 @@
+.mainContainer {
+    width: 85%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardParent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+    padding: 40px;
+    box-sizing: border-box;
+    justify-content: center;
+}

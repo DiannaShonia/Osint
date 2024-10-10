@@ -3,13 +3,10 @@ import { motion } from "framer-motion";
 import { slide, scale } from "../../CurvedAnimation";
 import { Link } from "react-router-dom";
 
-const PageLink = ({ data, isActive, setSelectedIndicator }) => {
+const PageLink = ({ data, isActive }) => {
   return (
     <motion.div
       className={styles.link}
-      onMouseEnter={() => {
-        setSelectedIndicator(data?.href);
-      }}
       custom={data?.index}
       variants={slide}
       initial="initial"
@@ -21,7 +18,7 @@ const PageLink = ({ data, isActive, setSelectedIndicator }) => {
         animate={isActive ? "open" : "closed"}
         className={styles.indicator}
       ></motion.div>
-      <div>{data?.title}</div>
+      <Link to={data.href}>{data.title}</Link>
     </motion.div>
   );
 };
