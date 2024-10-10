@@ -1,13 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles/index.scss";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Layout from "./components/Layout/Layout.jsx";
 import Scanner from "./features/Scanner/Scanner.jsx";
 import ScanHistory from "./features/ScanHistory/ScanHistory.jsx";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: (
